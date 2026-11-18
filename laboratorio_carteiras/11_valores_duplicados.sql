@@ -1,0 +1,7 @@
+
+SELECT 
+    carteira_id,
+    COUNT(carteira_id) AS QTD
+FROM carteiras
+GROUP BY carteira_id
+HAVING COUNT(carteira_id) >1;
